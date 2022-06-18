@@ -4,13 +4,13 @@ This repository contains logical programs
 
 By Java 7
 ==============================
-AscendingSortingArray
-CharacterOccuranceInString
-FirstNonRepeatingCharacter
+AscendingSortingArray<br />
+CharacterOccuranceInString<br />
+FirstNonRepeatingCharacter<br />
 Print index of two numbers who sum is 4
    
 By Java 8
 ============================
-  -FilterEndswithExample
-  -RemoveDuplicatesFromArray
-  -SumOfProductPrice
+  FilterEndswithExample<br />
+  RemoveDuplicatesFromArray<br />
+  SumOfProductPrice
