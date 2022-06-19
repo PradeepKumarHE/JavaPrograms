@@ -13,4 +13,7 @@ By Java 8
 ============================
   FilterEndswithExample<br />
   RemoveDuplicatesFromArray<br />
-  SumOfProductPrice
+  SumOfProductPrice<br />
+  Sorting <br />
+  FlatMap Example <br />
+  Convert List to map example <br />
