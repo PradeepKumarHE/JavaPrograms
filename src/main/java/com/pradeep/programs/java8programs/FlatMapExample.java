@@ -13,7 +13,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-class Developer {
+class Author {
 	private Integer id;
 	private String name;
 	private Set<String> book;
@@ -26,26 +26,25 @@ class Developer {
 	}
 }
 
+
 public class FlatMapExample {
 	public static void main(String[] args) {
-		Developer o1 = new Developer();
-		o1.setName("mkyong");
-		o1.addBook("Java 8 in Action");
-		o1.addBook("Spring Boot in Action");
-		o1.addBook("Effective Java (3nd Edition)");
+		Author a1 = new Author();
+		a1.setName("Pradeep");
+		a1.addBook("Java");
+		a1.addBook("Java 8");
+		a1.addBook("Spring boot");
 
-		Developer o2 = new Developer();
-		o2.setName("zilap");
-		o2.addBook("Learning Python, 5th Edition");
-		o2.addBook("Effective Java (3nd Edition)");
+		Author a2 = new Author();
+		a2.setName("Namratha");
+		a2.addBook("Learning Python, 5th Edition");
+		a2.addBook("VueJs");
 
-		List<Developer> list = new ArrayList<>();
-		list.add(o1);
-		list.add(o2);
+		List<Author> list = new ArrayList<>();
+		list.add(a1);
+		list.add(a2);
 
-		Set<String> collect = list.stream().map(x -> x.getBook()) 
-				.flatMap(x -> x.stream()) 
-				.filter(x -> !x.toLowerCase().contains("python")) 
+		Set<String> collect = list.stream().map(x -> x.getBook()).flatMap(x -> x.stream()).filter(x -> !x.toLowerCase().contains("python")) 
 				.collect(Collectors.toSet()); 
 
 		collect.forEach(System.out::println);
