@@ -12,5 +12,5 @@ public class CountZerosUptoGivenNumber {
         }
       }  
      System.out.println("Count of zeros is :: "+count);
-	}
+ }
 }
